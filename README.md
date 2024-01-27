@@ -8,7 +8,9 @@ user_id INTEGER,
 user_name TEXT NOT NULL,
 institution TEXT,
 contact_email TEXT
+
 ---------------------------------------------------------------------------------------------------------------------------------------
+
 external Link where you store your experiment or simulation data:
 simulation_id INTEGER NULL,                        #Simulation ID you give
 experiment_id INTEGER NULL,                        #Experiment ID you give
@@ -17,6 +19,7 @@ output_filename TEXT NULL,
 output_file_path TEXT NULL,                        #output directory of your experiment/simulation output file
 file_URL TEXT NULL,                                #URL if the output data is online
 paper_ref_URL TEXT NULL,                           #URL if paper published
+
 ---------------------------------------------------------------------------------------------------------------------------------------
 
 Simulation primary database: 
@@ -35,6 +38,7 @@ laser BOOL,
 accelerated_particle BOOL,                        #If there are particles being accelerated        
 accelerated_particle_charge FLOAT,                
 external_injection BOOL,                          #If external injection method
+
 ---------------------------------------------------------------------------------------------------------------------------------------
 
 Simulation input parameters:
@@ -70,7 +74,9 @@ w0 FLOAT NULL,
 charge FLOAT NULL,
 shape TEXT NULL,
 init_emit FLOAT NULL
+
 ---------------------------------------------------------------------------------------------------------------------------------------
+
 Experiment Primary Database: 
 experiment_id INTEGER PRIMARY KEY,
 user_id INTEGER,
@@ -86,7 +92,9 @@ laser BOOL,                                       #If Laser is used
 laser_type TEXT NULL,                             #type of laser used
 laser_specific TEXT NULL,                         #Other details of the laser facility
 accelerated_particle BOOL,                        #If there's accelerated particle
+
 ---------------------------------------------------------------------------------------------------------------------------------------
+
 Experiment Input Database:
 input_id INTEGER PRIMARY KEY,
 experiment_id INTEGER,
@@ -102,5 +110,6 @@ Laser_energy FLOAT NULL,                          #Laser Energy in J
 tau_FWHM FLOAT NULL,                              #Laser pulse duration in ps
 a0 FLOAT NULL,                              
 w0 FLOAT NULL,                                    #Laser waist in um
+
 ---------------------------------------------------------------------------------------------------------------------------------------
 
