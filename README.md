@@ -1,5 +1,5 @@
 # LWFA_database
-This database is created to store old or new LWFA simulation or experiment data information. 
+This database is created to store old or new LWFA simulation or experiment data. 
 The database is written in sqlite3 with SQL/python. 
 
 If followed by NULL, then the variable is optional.
