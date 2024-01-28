@@ -1,24 +1,26 @@
 # LWFA_database
+This database is created to store old or new LWFA simulation or experiment data information. 
+The database is written in sqlite3 with SQL/python. 
 
-If followed by NULL, then optional.
+If followed by NULL, then the variable is optional.
 
 	User Database:
 	(Required)
-	user_id INTEGER,
-	user_name TEXT NOT NULL,
-	institution TEXT,
-	contact_email TEXT
+	user_id INTEGER,				  #User ID
+	user_name TEXT NOT NULL,		          #User Name
+	institution TEXT,				  #User institution
+	contact_email TEXT			          
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 
 	external Link where you store your experiment or simulation data:
-	simulation_id INTEGER NULL,                        #Simulation ID you give
-	experiment_id INTEGER NULL,                        #Experiment ID you give
+	simulation_id INTEGER NULL,                        #Simulation ID 
+	experiment_id INTEGER NULL,                        #Experiment ID 
 	input_filename TEXT NULL,                          #File you store the 
 	output_filename TEXT NULL,
 	output_file_path TEXT NULL,                        #output directory of your experiment/simulation output file
-	file_URL TEXT NULL,                                #URL if the output data is online
-	paper_ref_URL TEXT NULL,                           #URL if paper published
+	file_URL TEXT NULL,                                #URL if data is online
+	paper_ref_URL TEXT NULL,                           #URL if paper is published
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 
